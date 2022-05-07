@@ -1,0 +1,136 @@
+ *{
+margin: 0;
+ padding: 0;
+box-sizing: border-box;
+}
+
+body {    
+font-family: sans-serif;
+margin-top: 100px;
+
+}
+
+
+input:hover {
+   cursor: pointer;
+}
+
+ .username, 
+ .password,
+ .btn_login {
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+}
+
+.redBorder {
+    border: 3px solid red;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#user, #pass {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-right: 10px;
+    position: relative;
+ 
+}
+#check_user, #check_pass {
+    color: green;
+}
+#wrong_user, #wrong_pass  {
+    color: red;   
+}
+#check_user {
+    display: none;
+}
+#check_pass {
+    display: none;
+}
+#wrong_user {
+    display: none;
+}
+#wrong_pass {
+    display: none;
+}
+
+#user #check_user, #user #wrong_user {
+    position: absolute;
+    right: 0;
+    top: -45px;
+  }
+
+#pass #check_pass, #pass #wrong_pass { position: absolute;
+    right: 0;
+    top: -30px;
+}
+
+.greenBorder {
+    border: 3px solid green;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+span .fa-check {
+    color: green;
+}
+span .fa-xmark {
+    color: red;
+} 
+#inputUsername {
+    margin-bottom: 20px;
+}
+
+ #inputPassword, #inputUsername {
+  /*koristimobackgroundimagekaoosnovuzaizraduhoverefektajednabojauosnovialibeznjenogprikazapoveliciniel.Jednabojaodgovarazaobaefekta,ipocetnepozsu0*/background-image: linear-gradient(rgba(161, 153, 153, 0.709) 0 0);
+  /*tranzicijuradimosamopovelicinipozadineod:;
+  0do100%,jerjesirinapodefaultzagradient*/background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: .8s;
+  border: 2px solid gray;
+  border-radius: 10px;
+  overflow:hidden;
+  transition: 0.8s ;
+  -webkit-transition: .8s;
+  -moz-transition: .8s;
+  -ms-transition: .8s;
+  -o-transition: .8s;
+}
+ #inputPassword:hover, #inputUsername:hover{
+    background-size: 100% 100%;
+    border: none;
+}
+#btn_login {
+    background-color:rgba(161, 153, 153, 0.709) ;
+    border-radius: 10px;
+}
+
+#greske_user,  #greske_pass {
+    display: flex;
+    justify-content: center;
+}
+
+#prikazi {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+@media (max-width: 576px) {
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+button {
+      width: 100%; 
+    }
+}
